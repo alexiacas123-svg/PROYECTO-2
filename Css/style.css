@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.portada{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.portada::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    z-index:0;
+}
+.portada h1 {
+    z-index: 1;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(18, 25, 35);
+    display:flex;
+    justify-content: space-between;
+    padding: 0% 5% ;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+
+
+    
+}
+
+nav a
+{
+    color: rgb(194, 81, 204);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    transition: all 0.3s;
+
+}
+
+nav a:hover {
+    background-color: rgb(66, 164, 185);
+}
+
+body {
+    background-color: rgb(18, 25, 35);
+}
+
+.Tabla{
+    color: rgb(255, 255, 255);
+    height: 100%;
+    height: 100%;
+    padding: 20px 10px 20px 40px;
+    margin: 10%;
+    border: 1px solid #000000;
+    background-color: rgb(30, 43, 60);
+    border-radius: 15px;
+    border: solid 2px #000000;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow:2px 2px 5px rgb(66, 164, 185);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
